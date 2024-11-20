@@ -59,7 +59,7 @@ class WC_Gateway_Moneybadger extends WC_Payment_Gateway {
         $this->method_description = 'Accept crypto payments from Bitcoin Lightning, VALR, Luno and Binance wallets.';
         $this->has_fields         = true;
         $this->supports           = array('products', 'iframe');  // Declare iframe support
-        $this->icon               = plugin_dir_path(__FILE__) . '../assets/images/moneybadger-logo.png';
+        $this->icon               = WC_GATEWAY_MONEYBADGER_URL . '/assets/images/moneybadger-logo.png';
 
         $this->init_form_fields();
         $this->init_settings();
